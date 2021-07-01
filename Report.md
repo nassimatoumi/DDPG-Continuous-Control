@@ -11,7 +11,7 @@ The neural network weights are updated using the ADAM optimizer, with a learning
 
 Note that to stabilize learning, the rewards returned by the environment are multiplied by a factor of 0.1. 
 ## Results
-The model was trained on a GPU, and was able to obtain an average reward over the 20 agents of over 30 for 100 consecutive episodes after 127 episodes, as shown in the figure below.
+The model was trained on a GPU, and was able to reach an average reward over the 20 agents of over 30 after 127 episodes, the average reward remained over 30 for a 100 consecutive episodes as shown in the figure below. The environment was solved after 227 episodes, with an average reward of 36.56.
 
 ![alt text](https://github.com/nassimatoumi/DDPG-Continuous-Control/blob/d43202de07b882d4c65590dbbf268d01f7328995/Scores.png)
 

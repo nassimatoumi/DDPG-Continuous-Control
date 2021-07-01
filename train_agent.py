@@ -56,7 +56,7 @@ def ddpg(reward_objective=30, max_t=1000):
             episodes_over_objective = 0
 
         if episodes_over_objective == 100:
-            print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(i_episode - 100,
+            print('\nEnvironment solved in {:d} episodes!\tAverage Score: {:.2f}'.format(i_episode,
                                                                                          np.mean(scores_window)))
             torch.save(agent.actor_local.state_dict(), 'actor_checkpoint.pth')
             torch.save(agent.critic_local.state_dict(), 'critic_checkpoint.pth')

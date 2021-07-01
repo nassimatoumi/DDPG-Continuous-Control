@@ -14,9 +14,35 @@ For this project, two separate versions of the Unity environment can be used to 
 
 In this repository, the environment is solved using the second version.
 
-### Getting Started: 
-To run this project, multiple dependencies should be met. In particular, the environment should be installed. 
+## Getting Started: 
+To run this project, multiple dependencies should be met before installing the environment:
 
+### Dependencies
+1. The environment requires the version 3.6 of Python to run, a new Python 3.6 environment can be created and activated using Anaconda as follows.
+
+	- __Linux__ or __Mac__: 
+	```bash
+	conda create --name drlnd python=3.6
+	source activate drlnd
+	```
+	- __Windows__: 
+	```bash
+	conda create --name drlnd python=3.6 
+	activate drlnd
+	```
+	
+2. Afterwards, a minimal install of OpenAI gym should be performed following instructions in [this repository](https://github.com/openai/gym).
+	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
+	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
+	
+3. Next, the Deep Reinforcement Learning repository of Udacity should be cloned, and several dependencies can be installed from the `python/` folder.
+```bash
+git clone https://github.com/udacity/deep-reinforcement-learning.git
+cd deep-reinforcement-learning/python
+pip install .
+```
+  
+### Environment
 Depending on the host operating system, the environment can be downloaded from one of the following links:
 - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
 - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
@@ -25,7 +51,7 @@ Depending on the host operating system, the environment can be downloaded from o
     
 Afterwards, the file should be decompressed, and the path for the environment file should be edited on the **train_agent.py** and **use_agent.py** files, at line 9. 
 
-### Instructions:
+## Instructions:
 - To train the agent from scratch, run the following command, while specifying in the file the path of the newly created model if needed:
 
     **python3 train_agent.py**
